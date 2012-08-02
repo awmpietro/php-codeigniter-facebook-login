@@ -1,11 +1,12 @@
 <div class ="fb_login">
-    <?php if(isset($user_profile)) : ?>
+    <?php if($this->session->userdata('user_profile')) : ?>
         <div class ="user_info">
-            <?php foreach($user_profile as $user) : ?>
-                <h1>Bem vindo(a) <?php echo $user['name']; ?></h1>
-            <?php endforeach; ?>
+            <?php print_r($this->session->userdata('user_profile')); ?>
+        </div>
+        <div class="logout">
+            <p><a href="<?php echo $logout_url; ?>">Logout</a></p>
         </div>
     <?php else : ?>
-        <p><a href="<?php echo $login_url; ?>"</p>
+        <p><a href="<?php echo $login_url; ?>">Login com Facebook</a></p>
     <?php endif; ?>
 </div>
