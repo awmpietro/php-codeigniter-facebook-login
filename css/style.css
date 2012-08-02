@@ -1,0 +1,19 @@
+/* 
+    Document   : style
+    Created on : 01/08/2012, 23:25:39
+    Author     : Arthur Mastropietro
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+body,html{min-height:100%}
+#container{width:960px;margin:0 auto;}
+#container #header{height:100px;border:1px solid #d5d5d5}
+#container #header #logo{float:left;}
+#container #header #logo h1{font-size:32px}
+#container .main_content{border:1px solid #d5d5d5;margin-top:10px;height:400px}
+#container .main_content .fb_login{border:1px solid #d5d5d5;padding:20px;margin:0 auto;width:50%;min-height:200px;border-radius:20px}
+#container #footer{height:100px;border:1px solid #d5d5d5;clear:both;margin-top:10px}
