@@ -1,6 +1,17 @@
+INFORMAÇÕES GERAIS:
+
 Login com Facebook no CodeIgniter
 
 Escrevi esse código para o CodeIgniter, sobre como logar um usuário, ou simplesmente pegar seus dados públicos, utilizando a biblioteca do Facebook.
 
 O app foi escrito utilizando-se somente a PHP SDK do Facebook, ou seja, não utilizei a JavaScript SDK, se quiser utiliza-lá terá que adaptar o código.
+ 
+A classe nativa Session encontrada em system -> libraries -> Session foi substituída por uma classe Session criada por Dariusz Debowczyk, que corrige alguns bugs da classe nativa do CI, utiizando recursos de sessão nativos do PHP > 4.3.2 (Obs: O login com o Fb só funciona com essa classe).
+
+A PHP SDK 2.0 esta incluída em applications -> libraries já com os arquivos necessários devidamente renomeados.
+
+IMPORTANTE: Esse sistema só funcionará em um servidor remoto, ou seja, ele não funcionará em seu servidor local (localhost). Isso pq é necessário criar um app em developers.facebook, e na criação do app é necessário informar a URL de onde o login com o Fb funcionará.
+
+Após criar o app em developers.facebook você deverá copiar o id e o secret dele e substituir no controller index.php, nas duas funções: fb() e fb_auth() (onde esta demarcado com xxx...).
+_______________________________________________________________________________________________________________________
 
