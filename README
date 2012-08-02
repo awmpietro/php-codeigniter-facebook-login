@@ -1,1 +1,6 @@
-Login com Facebook no CodeIgniter. Em breve...
+Login com Facebook no CodeIgniter
+
+Escrevi esse código para o CodeIgniter, sobre como logar um usuário, ou simplesmente pegar seus dados públicos, utilizando a biblioteca do Facebook.
+
+O app foi escrito utilizando-se somente a PHP SDK do Facebook, ou seja, não utilizei a JavaScript SDK, se quiser utiliza-lá terá que adaptar o código.
+
